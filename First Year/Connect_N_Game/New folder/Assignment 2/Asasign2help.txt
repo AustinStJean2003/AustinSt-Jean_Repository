@@ -1,0 +1,5 @@
+Print board on frame
+Undo button
+Save Button
+Resume Button
+Validation Combobox
