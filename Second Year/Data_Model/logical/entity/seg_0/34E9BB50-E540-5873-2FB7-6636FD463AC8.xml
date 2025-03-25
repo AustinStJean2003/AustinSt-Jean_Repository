@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="34E9BB50-E540-5873-2FB7-6636FD463AC8" name="Suite">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-14 18:08:33 UTC</createdTime>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SUITE_ID" id="F70898CD-9C5D-B2C5-CA32-E432CBD14E23">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-30 18:00:46 UTC</createdTime>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RESERVATION_ID1" id="1F8D6E44-31BE-B281-0992-45FC0186C6AB">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-30 18:04:28 UTC</createdTime>
+<generatorID>8AA73F75-24AB-1CE0-9957-F83BED675EB1</generatorID>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>FEE9B766-BFDE-CB2A-0D66-B0B73D286254</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUITE_STATUS" id="5B349E7D-6B4F-7C57-BF4F-CF787ADFE4CD">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-30 18:19:56 UTC</createdTime>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUITE_TYPE" id="917A65F6-F6E4-FC93-C169-9BF6AE759F8B">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-30 18:22:17 UTC</createdTime>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1C9CD9DE-E9F0-B2AB-3AAA-4025D48561AC" name="Suite PK">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-30 18:17:40 UTC</createdTime>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F70898CD-9C5D-B2C5-CA32-E432CBD14E23</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

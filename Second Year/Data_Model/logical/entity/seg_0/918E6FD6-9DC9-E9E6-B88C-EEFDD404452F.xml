@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="918E6FD6-9DC9-E9E6-B88C-EEFDD404452F" name="Discount">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-23 18:16:01 UTC</createdTime>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="RESERVATION_ID" id="FBB0C176-F224-EF5E-B298-928267DF0FF4">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-30 18:04:28 UTC</createdTime>
+<generatorID>E1FB4553-3CA5-AC91-6A04-A8A87C317024</generatorID>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<referedAttribute>9DED9F96-195E-ACCE-725A-8EE98F7D051F</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DISCOUNT_ID" id="2AEAFEA2-C243-312F-0B98-2EBD29A85D15">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-30 18:34:22 UTC</createdTime>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DISCOUNT_AMOUNT" id="218829E5-315F-E3A7-EFAF-A79F4BBCDC14">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-30 18:04:35 UTC</createdTime>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="571B67F0-7D23-A4F9-2A40-EA1F95AFD06E" name="Discount PK">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-30 18:34:08 UTC</createdTime>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2AEAFEA2-C243-312F-0B98-2EBD29A85D15</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

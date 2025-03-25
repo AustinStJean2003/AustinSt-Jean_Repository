@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ED051253-9E2F-D1BE-1706-2997760FFA27" name="Cat Rate">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-14 18:41:27 UTC</createdTime>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CAT_RATE_AMOUNT" id="4DEDDD64-BDBF-B018-B6EA-D1D05D157D84">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-30 18:19:51 UTC</createdTime>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CAT_RATE_ID" id="C50E8027-ED1F-6BFD-201C-AB3742CF4E64">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-30 18:28:46 UTC</createdTime>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SERVICE_ID" id="8D975793-49F2-595E-0211-683F808137BC">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-30 18:33:38 UTC</createdTime>
+<generatorID>E6925B73-6A14-F538-DCB4-D14F9E1F9E17</generatorID>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<referedAttribute>810ACAA5-7AC2-9E4B-B373-A32B4EB17ABD</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B01C4A5F-EDCB-040D-63D4-7FE55A8255F6" name="Cat Rate PK">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-30 18:07:33 UTC</createdTime>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4DEDDD64-BDBF-B018-B6EA-D1D05D157D84</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

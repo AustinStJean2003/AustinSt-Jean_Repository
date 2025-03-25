@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="61275001-ABA9-BB9F-A92B-462354FE1D44" name="Service">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-14 18:04:09 UTC</createdTime>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SERVICE_ID" id="810ACAA5-7AC2-9E4B-B373-A32B4EB17ABD">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-30 18:33:14 UTC</createdTime>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RESERVATION_ID" id="FB58B869-A8B8-087D-F41E-56D16268884B">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-30 18:04:28 UTC</createdTime>
+<generatorID>2DDC4C3E-79FA-1613-18C0-DD5BA3E53595</generatorID>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<referedAttribute>9DED9F96-195E-ACCE-725A-8EE98F7D051F</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SERVICE_TYPE" id="B75C7E05-7693-776F-9E02-DB20A3C07D71">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-30 18:06:48 UTC</createdTime>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SERVICE_RATE" id="B6AD2964-520F-62F4-21DA-4B0A5DF4398A">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-30 18:29:57 UTC</createdTime>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="691325D5-055D-834A-5F64-183E9B69E7CB" name="Service PK">
+<createdBy>2034907</createdBy>
+<createdTime>2021-09-30 18:33:35 UTC</createdTime>
+<ownerDesignName>Team3_DataMod</ownerDesignName>
+<engineerTo>
+<item key="22545C5D-C15F-FE8F-5B57-029986213732" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>810ACAA5-7AC2-9E4B-B373-A32B4EB17ABD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
