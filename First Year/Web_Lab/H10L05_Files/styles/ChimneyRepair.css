@@ -1,0 +1,14 @@
+
+h1 { font-family: Verdana, Arial, sans-serif; 
+    font-size: 2em; 
+    color: #B22222; 
+    background-color: transparent 
+}
+p { font-family: Verdana, Arial, sans-serif; 
+   font-size: 80%; 
+   color: #800000; 
+   background-color: transparent 
+}
+body {
+    background-image: url(./images/chimney.gif);
+}
