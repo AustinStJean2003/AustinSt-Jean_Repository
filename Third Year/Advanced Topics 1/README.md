@@ -1,0 +1,1 @@
+This is a research assignment I did in advanced topics 1. I researched AI and how it is being used in computer science. I created a presentation on a specific techonology, I chose to do mine on facial recognition and deepfakes.
