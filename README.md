@@ -2,8 +2,8 @@
 # Program Exit Assessment
 
   ## Austin St. Jean
-  
    <a href="austinstj10@gmail.com">austinstj10@gmail.com</a>
+   <a href="https://austinstjean-com.pages.dev/projects"> My Personal Website</a>
     <p>Heritage College<p>
     <p>Computer Science Graduate</p>
     
