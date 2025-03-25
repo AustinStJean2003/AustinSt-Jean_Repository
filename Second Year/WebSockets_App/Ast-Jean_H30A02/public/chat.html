@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="./styles/chat.css" type="text/css" />
+  </head>
+  <body>
+    <div id="headerDiv">
+      <p>
+        Chatty Chatters
+      </p>
+    </div>
+    <div id="userformdiv">
+      <h1 id="login">LOGIN</h1>
+      <h3>Please enter user name</h3>
+      <form id="userForm">
+        <input id="username" autocomplete="off" />
+        <button id="sendusername">Send</button>
+      </form>
+      <div id="errdiv"></div>
+    </div>
+    <div id="usertitle">
+      Users
+      <div id="userdiv"></div>
+    </div>
+    <div id="gameContainer">
+      <div id="countdowntimer"></div>
+      <div id="waitDiv"></div>
+      <div id="gameDiv">
+        <button id="paperBtn"><img src="./images/paperIcon.PNG" /></button>
+        <button id="rockBtn"><img src="./images/rockIcon.PNG" /></button>
+        <button id="scissorsBtn"><img src="./images/scissorsIcon.PNG" /></button>
+        <div id="answerDiv"></div>
+        <div id="winMessage"></div>
+      </div>
+    </div>
+
+    <div id="chatArea">
+      <ul id="messages"></ul>
+      <form id="form" action="">
+        <input id="input" autocomplete="off" /><button>Send</button>
+      </form>
+    </div>
+    <div id="privateChatArea">
+      <ul id="privatemessages"></ul>
+      <form id="privateform" action="">
+        <input id="privateinput" autocomplete="off" /><button>Send</button>
+      </form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./scripts/chatClient.js"></script>
+  </body>
+</html>
