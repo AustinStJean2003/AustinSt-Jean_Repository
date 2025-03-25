@@ -1,0 +1,138 @@
+﻿@model IEnumerable<HVK.Models.PetVaccination>
+
+@{
+    ViewData["Title"] = "Edit";
+
+    var allVaccs = new List<string>();
+
+    foreach (string vacc in Enum.GetNames(typeof(PetVaccination.AllVaccinations))) {
+        allVaccs.Add(vacc);
+    }
+
+    var petVaccList = Model.ToList();
+
+}
+
+<main>
+    <div class="ManageAccount">
+        <div class="connect">
+            <h2 class="manageReservation slightbold">Manage Vaccination</h2>
+            <h4>@ViewBag.PetName</h4>
+            <h3>Vaccination Information:</h3>
+            <div class="clerk-vacc-table-div">
+                <div class="edit-all-vacc-div">
+
+                    @*<form asp-action="Edit" asp-controller="managevaccination" id="edit-all-vacc-form">
+                <label for="edit-all-vacc-dates-input">Edit All Vaccinations: </label>
+                <input asp-for="AllExpiryDate" type="date" id="edit-all-vacc-dates-input" value="@DateTime.Now.ToString("yyyy-MM-dd")" min="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                <input type="submit" name="edit-all-vacc-dates-input" id="edit-all-btn-save" class="vacc-edit-btn" value="Save" />
+                <span asp-validation-for="AllExpiryDate"></span>
+            </form>*@
+                </div>
+
+                <div>
+                    <p class="change-all-vacc-p">Change All Dates: <input type="date" id="change-all-vacc" /> <input type="submit" id="submit-change-all-vacc" value="Save For All"/></p>
+                </div>
+                <form asp-action="Edit" asp-controller="petvaccinations">
+                    <table class="vacc-table">
+                        <thead>
+                            <tr>
+                                <th class="center">Status</th>
+                                <th class="center">Vaccination Name</th>
+                                <th>Expiry Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+
+
+                            @for (int i = 0; i < allVaccs.Count(); i++)
+                            {
+                                <tr>
+
+                                    @{
+                                        var hasVacc = false;
+                                    }
+                                    @foreach (var petvacc in Model)
+                                    {
+                                        @if (petvacc.Vaccination.Name == allVaccs[i])
+                                        {
+                                            hasVacc = true;
+
+                                        }
+
+                                    }
+
+                                    @if (hasVacc)
+                                    {
+                                        @foreach (var petvacc in Model)
+                                        {
+
+                                            @if (petvacc.Vaccination.Name == allVaccs[i])
+                                            {
+
+
+                                                @if (petvacc.ExpiryDate < DateTime.Now)
+                                                {
+                                                    <td class="expired-vacc"> Expired </td>
+                                                }
+                                                else if (petvacc.VaccinationChecked)
+                                                {
+                                                    <td class="good">Validated</td>
+                                                }
+                                                else
+                                                {
+                                                    <td class="warning">Not Validated</td>
+                                                }
+                                                <td>@allVaccs[i]</td>
+                                                <td>
+                                                    <input asp-for="@petvacc.ExpiryDate" type="date" value="@(((DateTime)petvacc.ExpiryDate).ToString("yyyy-MM-dd"))" /><br />
+                                                    <span asp-validation-for="@petvacc.ExpiryDate"></span>
+                                                </td>
+
+                                            }
+                                        } <!--foreach-->
+                                    }
+                                    else
+                                    {
+
+
+                                        <td class="missing-vacc">
+                                            Missing
+
+                                        </td>
+                                        <td>@allVaccs[i]</td>
+                                        <td>
+                                            <input type="date" /><br />
+
+                                        </td>
+                                    }
+
+                                </tr>
+                            }<!--for-->
+
+
+
+
+
+
+
+
+
+
+                        </tbody>
+                    </table>
+
+                    <br />
+                    <div class="contain">
+                        <div class="btn">
+                            <input type="submit" id="theButton" value="Save Changes">
+                        </div><div class="link"><a asp-action="Index" asp-controller="Home">Back to Home page</a></div>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</main>

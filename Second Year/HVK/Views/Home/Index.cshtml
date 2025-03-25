@@ -1,0 +1,131 @@
+﻿
+@model HVK.Models.Customer
+<main>
+    
+    <div class="customer-section">
+            <h2 class="slightbold">Account Information</h2>
+            <div class="customer-subsection">
+                <div class="cust-info-subsection">
+                    <p class="cust-info-title">My Information</p>
+                    <div class="customer-info">
+                        <p><span class="bold cust-data-labels">First Name:</span> @Model.FirstName</p>
+                        <p><span class="bold cust-data-labels">Last Name:</span> @Model.LastName</p>
+                        <p><span class="bold cust-data-labels">Email Address:</span> @Model.Email</p>
+                        <p><span class="bold cust-data-labels">Phone:</span> @Model.Phone</p>
+                        <p><span class="bold cust-data-labels">Cell Phone:</span> @Model.CellPhone</p>
+                    </div>
+                    <div class="cust-info-subsection">
+                        <p><span class="bold cust-data-labels">Street: </span> @Model.Street</p>
+                        <p><span class="bold cust-data-labels">City:</span> @Model.City</p>
+                        <p><span class="bold cust-data-labels">Province:</span> @Model.Province</p>
+                        <p><span class="bold cust-data-labels">Postal Code:</span> @Model.PostalCode</p>
+                    </div>
+
+                </div>
+                <div class="cust-info-subsection emergency-info">
+                    <p class="cust-info-title">Emergency Contact Information</p>
+                    <p><span class="bold cust-data-labels">First Name: </span> @Model.EmergencyContactFirstName</p>
+                    <p><span class="bold cust-data-labels">Last Name:</span> @Model.EmergencyContactLastName</p>
+                    <p><span class="bold cust-data-labels">Phone:</span> @Model.EmergencyContactPhone</p>
+                </div>
+                <div class="section-icons">
+                    <a asp-action="Edit" asp-controller="Customers">
+                        <span class="material-icons edit-icon">
+                            edit
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="customer-section">
+            <h2 class="slightbold">Pets</h2>
+            <div class="customer-subsection">
+                @foreach (var Pet in Model.Pets) {
+                <div class="pet-section">
+
+                    <div class="pet-info">
+                        
+                <h4>@Pet.Name</h4>
+                <p>@Pet.Gender</p>
+                <p>@Pet.Breed</p>
+                </div>
+                <div class="section-icons">
+                    <a href="./construction" class="delete-icon-a">
+                        <span class="material-icons delete-icon">
+                            clear
+                        </span>
+
+                    </a>
+                    <a href="./pets/edit/@Pet.PetId" class="edit-icon-a">
+                        <span class="material-icons edit-icon">
+                            edit
+                        </span>
+                    </a>
+                </div>
+            </div>
+                }
+            <div class="section-icons">
+                <a asp-action="Index" asp-controller="Pets">
+                <span class="material-icons add-icon">
+                    add_circle
+                </span>
+                </a>
+            </div>
+
+            </div>
+        </div>
+        <div class="customer-section">
+            <h2 class="slightbold">Upcoming Reservations</h2> 
+            <div class="customer-subsection">
+                @{bool hasUpcoming = false;}
+                @foreach (var Pet in Model.Pets)
+                {
+                    @foreach (var PetRes in Pet.PetReservations)
+                    {
+                        @if (@PetRes.Reservation.StartDate > DateTime.Now)
+                        {
+                            { hasUpcoming = true; }
+                            <div class="reservation-section">
+                                <div class="reservation-info">
+
+                                    <h4>@PetRes.Reservation.StartDate.Year/@PetRes.Reservation.StartDate.Month/@PetRes.Reservation.StartDate.Day to @PetRes.Reservation.EndDate.Year/@PetRes.Reservation.EndDate.Month/@PetRes.Reservation.EndDate.Day</h4>
+                                    <p>
+                                        @PetRes.Pet.Name
+                                    </p>
+                                </div>
+                                <div class="section-icons">
+                                    <a asp-action="Delete" asp-route-id="@PetRes.ReservationId" asp-controller="Reservations">
+                                        <span class="material-icons delete-icon">
+                                            clear
+                                        </span>
+
+                                    </a>
+                                    <a asp-action="Edit" asp-route-id="@PetRes.ReservationId" asp-controller="Reservations">
+                                        <span class="material-icons edit-icon">
+                                            edit
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        }
+
+                    }
+                }
+                @if (!hasUpcoming)
+                {
+                    <p>You Have No Upcoming Reservations!</p>
+                }
+                <div id="book-res-btn-div">
+                    <div class="section-icons">
+                        @*<a class="book-reservations-link" href="./construction">Book Reservation</a>*@
+                        <a asp-action="Create" asp-controller="Reservations">
+                            Book Reservation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+           <a class="past-reservations-link" href="./construction">Past Reservations</a>
+
+    </main>
