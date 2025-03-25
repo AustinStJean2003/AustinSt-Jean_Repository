@@ -1,0 +1,23 @@
+.moviesDiv {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: auto;
+  padding: 10px;
+  width: 40%;
+  text-align: center;
+  background-color: rgb(240, 255, 250);
+}
+
+.moviesInfoDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#movieInfoLine {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+h3 {
+    text-decoration: underline;
+}

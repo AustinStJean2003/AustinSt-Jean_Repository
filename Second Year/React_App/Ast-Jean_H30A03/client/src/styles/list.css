@@ -1,0 +1,29 @@
+#movieListDiv {
+    background-color: aliceblue;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 480px;
+    overflow-y: scroll;
+    border: 2px solid black;
+    margin: 30px;
+    border-radius: 3px;
+}
+
+.movieDiv {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.movieDiv:hover {
+    background-color: beige;
+}
+
+#movieTitle {
+    font-size: 1.2em;
+    font-weight: bold;
+}

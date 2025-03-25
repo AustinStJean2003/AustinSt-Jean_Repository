@@ -1,0 +1,30 @@
+#form {
+    display: grid;
+    grid-template-columns: 30% 50%;
+    text-align: right;
+    width: 40%;
+    margin: auto;
+}
+
+label {
+    margin: 5px;
+}
+
+input {
+    margin: 5px;
+}
+
+h2 {
+    text-align: center;
+    color:rgb(0, 0, 87);
+}
+
+#btnAdd {
+    text-align: center;
+    padding: 7px;
+}
+
+button {
+    border-radius: 10px;
+    background-color: beige;
+}
