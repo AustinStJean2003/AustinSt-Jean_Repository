@@ -1,0 +1,470 @@
+    body {
+        background-color: black;
+        color: antiquewhite;
+        padding-bottom: 10px;
+    }
+    h1 {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-decoration: underline;
+        background-color: black;
+        color: #2cbe7a;
+        font-size: 6.2em;
+        text-align: center;
+        margin: auto;
+        padding-top: 20px;
+        line-height: 150%;
+        text-shadow:  -3px -3px 25px grey, 10px 10px 25px #2137b1;
+    }
+    .dominis {
+        height: 330px;
+        padding-top: 10px;
+        margin-top: -4.7em;
+        width: 500px;
+        margin-bottom: -90px;
+    }
+    .ht {
+        font-size: 3.5em;
+        color: #2b41bb;
+        text-align: center;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .ht2 {
+        font-size: 1.9em;
+    }
+    #ready {
+        font-size: 10em;
+        text-decoration: underline;
+        text-shadow:  -3px -3px 25px rgb(73, 62, 62), 10px 10px 25px #4151b1;
+        color: #2cbe7a;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    #welcome {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 5em;
+        color: #2cbe7a;
+        text-decoration: underline;
+    }
+    #start {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 6em;
+        margin-top: -50px;
+    }
+    .mtf {
+        color: #2cbe7a;
+        font-size: 6em;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-decoration: underline;
+    }
+    ul li {
+        background-color: black;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: solid .13em #2137b1;
+        border-radius: 10px;
+        list-style: none;
+        display: inline;
+        font-size: 2.5em;
+        color: #41dabe;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-shadow: -15px 2px 15px #2137b1;
+    }
+    a {
+        color: #41dabe;
+        text-decoration: none;
+    }
+    h3 {
+        text-align: center;
+        font-size: 2em;
+        color: #41dabe;
+        margin-bottom: -1px;
+        text-decoration: underline;
+    }
+    main {
+        padding-right: 40px;
+        margin-right: -13px;
+        line-height: 4.5em;
+        text-align: center;
+    }
+    div {
+        border-top: solid 7px #2cbe7a;
+        text-align: center;
+    }
+    .notmobile {
+        display: none;
+    }
+    .Fennec-no-background {
+        background-image: url(../images/Rocket\ League\ Screenshot\ 2020.09.23\ -\ 04.03.52.16.png);
+        background-repeat: no-repeat;
+        background-color: #022327;
+        background-position: center;
+        opacity: inherit;
+        height: 830px;
+        font-size: 2em;
+        text-align: center;
+        border-top: solid 7px #2cbe7a ;
+        border-bottom: solid 7px #2cbe7a;
+        font-size: 2.0em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: antiquewhite;
+    }
+    .plive {
+        margin-top: -30px;
+        font-size: 2em;
+        text-align: center;
+        padding-bottom: 10px;
+        font-weight: bold;
+    }
+    .roadhog-no-background {
+        background-image: url(../images/Rocket\ League\ Screenshot\ 2020.11.01\ -\ 22.53.37.92.png);
+        background-repeat: no-repeat;
+        background-color: #041f1a;
+        background-position: center;
+        opacity: inherit;
+        height: 400px;
+        margin-bottom: 30px;
+        border-top: solid 7px #2cbe7a;
+        border-bottom: solid 7px #2cbe7a;
+    } 
+    p {
+        color: antiquewhite;
+        font-size: 1.2em;
+        padding-top: 10px;
+        text-align: center;
+    }
+    .p {
+        font-size: 2em;
+        margin: auto;
+        text-align: center;
+        padding-top: 20px;
+    }
+    h2 {
+        color: #41dabe;
+        font-size: 2em;
+        text-align: center;
+        text-decoration: underline;
+        padding-top: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    td {
+        color: antiquewhite;
+        font-size: 1.5em;
+    }
+    table {
+        width: 200px;
+        margin: auto;
+    }
+    thead {
+        background-color: #041f1a;
+    }
+    th {
+        color: #41dabe;
+        font-size: 1.6em;
+        border-bottom: 1px #2137b1 dashed;
+    }
+    tbody {
+        font-family: arial, sana-serif;
+        font-size: .9em;
+    }
+    tbody td {
+        background-color: #022327;
+        border-bottom: 1px #2137b1 dashed;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+    }
+    .floatleft {
+        float: left;
+        margin-left: 25px;
+        width: 300px;
+    }
+    .floatright {
+        padding-left: 50px;
+        margin-right: 25px;
+        width: 300px;
+    }
+    caption {
+        color: #2cbe7a;
+        font-size: 2em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .game1 {
+        background-image: url(/images/Game1.png);
+    }
+    #s6 {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 2.5em;
+        text-align: center;
+        font-weight: bold;
+        margin-top: -3px;
+        text-shadow:  -3px -3px 25px white, 10px 10px 25px #41dabe;
+    }
+    #blue {
+        color: #2137b1;
+    }
+    dl{
+        color: antiquewhite;
+        text-align: left;
+        margin-left: 40px;
+    }
+    dl li {
+        list-style: none;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+    input {
+        background-color: black;
+        border: solid .13em #2137b1;
+        border-radius: 10px;
+        list-style: none;
+        color: #41dabe;
+        text-align: center;
+    }
+    legend {
+        color: #41dabe;
+        font-weight: bold;
+    }
+    fieldset {
+        border: solid 1px #2cbe7a;
+        width: auto;
+    }
+    textarea {
+        background-color: #000;
+        border: solid 1px #2137b1;
+        color: antiquewhite;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr 12fr;
+        gap: 5px;
+    }
+    input {
+        text-align: left;
+        max-width: fit-content;
+    }
+    label {
+        margin-right: 5px;
+        vertical-align: top;
+    }
+    select {
+        background-color: black;
+        border: solid .13em #2137b1;
+        border-radius: 10px;
+        list-style: none;
+        color: #41dabe;
+        text-align: center;
+    }
+    video {
+        width: 70%;
+        margin: 40px 0 40px 0;
+        
+    }
+    .rfloat {
+        float: right;
+        clear: both;
+        margin: 10px;
+    }
+    .lfloat {
+        float: left;
+        clear: both;
+        margin: 10px;
+    }
+    .picdiv {
+        overflow: auto;
+    }
+    .picp {
+        font-size: 1.3em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: antiquewhite;
+        margin-top: -1px;
+    }
+    h4 {
+        font-size: 2.4em;
+        color: #4151b1;
+        padding-left: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    ol li {
+        list-style-type: square;
+        font-size: 2em;
+    }
+    footer {
+        padding-top: 30px;
+    }
+    .test {
+        color: antiquewhite;
+        font-size: 1.2em;
+        padding-top: 10px;
+        text-align: center;
+        font-style: italic;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    h5 {
+        font-size: 2em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: antiquewhite;
+        text-align: center;
+    }
+    .number {
+        font-size: 1.5em;
+        text-decoration: underline;
+    }
+    .mail {
+        font-size: 1.5em;
+        text-decoration: underline;
+    }
+    
+
+@media screen and (min-width: 768px) {
+    .dominis {
+        height: 450px;
+        padding-top: 10px;
+        margin-top: -4.7em;
+        width: 800px;
+        margin-bottom: -90px;
+    }
+    ul li {
+        font-size: 3em;
+    }
+    ul li:hover {
+        font-size: 3.2em;
+    }
+    #ready {
+        margin-top: -1px;
+    }
+    h1 {
+        font-size: 11em;
+    }
+    .Fennec-no-background {
+        float: right;
+        width: 500px;
+        border-right: solid 7px #2cbe7a;
+        border-left: solid 7px #2cbe7a;
+        font-size: 1.7em;
+        height: 803px;
+    }
+    .roadhog-no-background {
+        width: 700px;
+        height: 700px;
+        float: left;
+        border-right: solid 7px #2cbe7a;
+        border-left: solid 7px #2cbe7a;
+    }
+    .notdesktop {
+        display: none;
+    }
+    .ht {
+        margin-bottom: 110px;
+    }
+    .notmobile {
+        display: contents;
+    }
+    .stand {
+        width: 800px;
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1.7em;
+    }
+    .sche {
+        width: 1400px;
+        font-size: 2.6em;
+    }
+    dl {
+        font-size: 1.5em;
+    }
+    form {
+        font-size: 1.5em;
+    }
+    .button {
+        font-size: 1em;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+    h2 {
+        font-size: 3.5em;
+    }
+    .teamtab {
+        width: 500px;
+        font-size: 1.7em;
+    }
+    .floatleft {
+        float: left;
+        margin-left: 25px;
+        width: 500px;
+        font-size: 1.7em;
+    }
+    .floatright {
+        float: right;
+        padding-left: 50px;
+        margin-right: 25px;
+        width: 500px;
+        font-size: 1.7em;
+    }
+    .picright {
+        float: right;
+        width: 700px;
+    }
+    .picleft {
+        float: left;
+        width: 900px;
+    }
+    .test {
+        font-size: 2em;
+    }
+    .link:hover {
+        color: purple;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    .owner {
+        margin: 2px;
+        flex: 1;
+    }
+    .player {
+        margin: 2px;
+        flex: 2;
+    }
+    .caster {
+        margin: 2px;
+        flex: 4;
+    }
+    .picp {
+        font-size: 2.5em;
+    }
+    .lfloat {
+        width: 300px;
+    }
+    .rfloat {
+        width: 300px;
+    }
+    h5 {
+        font-size: 2.5em;
+    }
+    .number {
+        font-size: 1.5em;
+        text-decoration: underline;
+    }
+    .mail {
+        font-size: 1.5em;
+        text-decoration: underline;
+    }
+    .notmobile2 {
+        display: none;
+        background-color: black;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: solid .13em #2137b1;
+        border-radius: 10px;
+        list-style: none;
+        display: inline;
+        font-size: 3em;
+        color: #41dabe;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-shadow: -15px 2px 15px #2137b1;
+    }
+}

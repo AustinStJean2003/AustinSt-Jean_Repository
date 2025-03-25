@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="styles/sites.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <main>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Teams.html">Teams</a></li>
+            <li><a href="Schedule.html">Schedule</a></li>
+            <li><a href="Standings.html">Standings</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="Testimonials.html">Testimonials</a></li>
+            <li class="notmobile2"><a href="Staff.html">Staff</a></li>
+            <li class="notmobile2"><a href="Streams.html">Streams</a></li>
+        </ul>
+    </main>
+    <p></p>
+    <form method="GET" name="Music" id="Music">
+
+        <label for="Name" class="textlabel">NAME: </label>
+        <input type="text" name="Name" id="Name" size="30">
+
+        <label for="Email" class="textlabel">EMAIL: </label>
+        <input type="email" name="Email" id="Email" size="55">
+
+        <label for="Email" class="textlabel">RECIPIENT: </label>
+
+            <select name="listen" id="listen">
+                <option value="none">--Enter Recicpient--</option>
+                <option value="1">Customer support</option>
+                <option value="2">Business Development</option>
+                <option value="3">Music Submission</option>
+                <option value="4">Press</option>
+            </select>
+        <p></p>
+
+
+        <fieldset>
+            <legend>Subject</legend>
+            <input type="checkbox" name="Tech" id="Tech">
+            <label for="Tech">Tech<br></label>
+            <input type="checkbox" name="Store" id="Store">
+            <label for="Store">Store<br></label>
+            <input type="checkbox" name="Service" id="Service">
+            <label for="Service">Service<br></label>
+            <input type="checkbox" name="Privacy" id="Privacy">
+            <label for="Privacy">Privacy<br></label>
+            <input type="checkbox" name="General" id="General">
+            <label for="General">General<br></label>
+            <input type="checkbox" name="Cancel" id="Cancel">
+            <label for="Cancel">Cancel subcription</label>
+
+        </fieldset>
+        <p></p>
+        <fieldset>
+            <legend>Social</legend>
+            <input type="radio" name="download" id="Discord" value="1">
+            <label for="Discord">Discord<br></label>
+            <input type="radio" name="download" id="Twitter" value="2">
+            <label for="Twitter">Twitter<br></label>
+            <input type="radio" name="download" id="Facebook" value="3">
+            <label for="Facebook">Facebook<br></label>
+            <input type="radio" name="download" id="Instagram" value="4">
+            <label for="Instagram">Instagram<br></label>
+            <input type="radio" name="download" id="Reddit" value="5">
+            <label for="Reddit">Reddit</label><br>
+            <input type="radio" name="download" id="YouTube" value="6">
+            <label for="YouTube">YouTube</label><br>
+            <input type="radio" name="download" id="Twitch" value="6">
+            <label for="Twitch">Twitch</label><br>
+        </fieldset>
+        <p></p>
+        <fieldset>
+            <legend>Message</legend>
+            <textarea name="text" id="text" cols="65" rows="5"></textarea>
+        </fieldset>
+<br>
+        <fieldset>
+            <legend>Additional information</legend>
+            <textarea name="info" id="info" cols="65" rows="5"></textarea>
+        </fieldset>
+
+        <p></p>
+        <input class="button" type="submit" id="btnSend" value="Send Form">
+        <p></p>
+    </form>
+    <div></div>
+    <br><br>
+    <footer>
+        <p>&copy; 2020 Car Ball League. All Rights Reserved CarBallLeague.ca</p>
+    </footer>
+</body>
+</html>
